@@ -59,6 +59,7 @@ a {
 
 /* спільні стилі */
 .container {
+  width: 428px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 16px;
@@ -148,9 +149,9 @@ a {
   padding-bottom: 96px;
 }
 
-.feature {
+/* .feature {
   width: 356px;
-}
+} */
 
 .title {
   font-weight: 700;
@@ -164,7 +165,7 @@ a {
 }
 
 .text {
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -646,7 +647,7 @@ a {
 .container.nav {
   display: flex;
   align-items: baseline;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .adress {
@@ -928,6 +929,11 @@ a {
   }
 
   .burger-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
     padding: 40px;
@@ -955,8 +961,6 @@ a {
     display: flex;
     flex-direction: column;
     gap: 40px;
-
-    margin-top: 284px;
   }
 
 
@@ -983,10 +987,9 @@ a {
 
   .burger-media {
     display: flex;
-    gap: 56px;
-    /* justify-content: center; */
+    justify-content: space-between;
 
-    margin-top: 48px;
+    max-width: 328px;
 
     /* mobile-menu end */
   }
@@ -1002,6 +1005,29 @@ a {
     display: none ;
   }
 
+  .container {
+    width: 768px;
+  }
+
+  .navigation {
+    margin-left: 121px;
+  }
+
+  .adress {
+    margin-left: auto;
+  }
+
+  .link {
+    padding-bottom: 24px;
+  }
+    
+  .contacts.email { 
+    padding-top: 30px;
+  }
+
+  .contacts.tel {
+    padding-bottom: 6px;
+  }
 
   .hero-title {
     font-size: 56px;
@@ -1024,6 +1050,10 @@ a {
     max-width: 736px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .feature {
+    width: 356px;
   }
 
   .title {
@@ -1291,7 +1321,7 @@ a {
   }
 
   .social-media {
-    margin-right: 80px;
+    margin-right: auto;
   }
 
   .footer-title {
